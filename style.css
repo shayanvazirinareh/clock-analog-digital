@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(white, rgba(0, 0, 255, 0.587), rgba(0, 128, 0, 0.667), white);
+}
+
+.clock {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(253, 254, 254, 0.97), rgba(128, 128, 128, 0.811));
+  border: 3px solid black;
+  box-shadow: 1px 1px 4px black;
+}
+
+@media screen and (max-width: 768px) {
+  .clock {
+    left: 30px;
+  }
+  .mark {
+    margin-left: 1.8rem;
+  }
+}
+.number div {
+  position: absolute;
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: lightgoldenrodyellow;
+  text-shadow: 1px 1px 2px black;
+  z-index: 999;
+}
+
+.twelve-one {
+  transform: translateX(47%);
+}
+
+.three-two {
+  transform: translate(96%, 700%);
+}
+
+.six-three {
+  transform: translate(50%, 1500%);
+}
+
+.nine-four {
+  transform: translate(2%, 521%);
+}
+
+.arrows {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: silver;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 49%;
+}
+
+.arrows div {
+  background: linear-gradient(rgba(0, 0, 0, 0.744), rgba(0, 128, 0, 0.87));
+  width: 7px;
+  position: absolute;
+  height: 120px;
+  top: 30%;
+  border-radius: 50% 50% 0 0;
+}
+
+.arrows .hour {
+  background: linear-gradient(rgba(255, 0, 0, 0.596), blue);
+}
+
+.arrows .second {
+  height: 150px;
+  top: 25%;
+}
+
+.mark {
+  text-align: center;
+  transform: translate(-201px, 100px);
+  border: 2px solid black;
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  color: #000;
+}
+
+.digita {
+  width: 100%;
+  height: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
